@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+    <meta charset="utf-8">
+
+    <title>Limaso</title>
+    <meta name="description" content="">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#000">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#000">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="libs/font-awesome-5.0.6/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/main.min.css">
+
+</head>
+
+<body>
+    <header class="topHeader">
+        <a href="#" class="logo"><img src="img/logo.png" alt=""></a>
+        <div class="container">
+            <a href="#" class="showNav">МЕНЮ <i class="fas fa-bars"></i></a>
+            <nav>
+                <ul class="mainNav">
+                    <li><a href="#">ткани для интерьера</a></li>
+                    <li><a href="#">домашний текстиль</a></li>
+                    <li><a href="#">колекции из текстиля</a></li>
+                    <li><a href="#">ресторанный текстиль</a></li>
+                    <li><a href="#">отельный текстиль</a></li>
+                </ul>
+            </nav>
+        </div>
+        <ul class='topIcons'>
+            <li><a href="#"><i class="fas fa-search"></i></a></li>
+            <li><a href="#"><i class="far fa-user"></i></a></li>
+            <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+        </ul>
+    </header>
+    <section class="headerBg">
+        <div class="container">
+            <div class="headerBgOwerlay">
+                <h2>изысканный дизайн<br>
+                    <span>теплых покрывал</span></h2>
+                <p>Смотрите и выбирайте, который вам по душе</p>
+                <a href="#" class="headerBtn">Смотреть</a>
+            </div>
+        </div>
+    </section>
+    <div class="container">
+        <ul class="routingNav">
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">Каталог</a></li>
+            <li><a href="#">Покрывала</a></li>
+        </ul>
+    </div>
+    <div class="container">
+        <aside>
+            <p class='sideTitle'>Категории</p>
+            <ul class="sideBar">
+                <li><a class="sideBarItem" href="">домашний текстиль</a>
+                    <ul class="subSideBar">
+                        <li><a class="subSideBarItem" href="">Гобеленовые сумки</a></li>
+                        <li><a class="subSideBarItem" href="">Скатерти</a></li>
+                        <li><a class="subSideBarItem" href="">Пледы</a></li>
+                        <li><a class="subSideBarItem" href="">Полотенца</a></li>
+                        <li><a class="subSideBarItem" href="">Показать все</a></li>
+                    </ul>
+                </li>
+                <li><a class="sideBarItem" href="">ткани для интерьера</a>
+                    <ul class="subSideBar">
+                        <li><a class="subSideBarItem" href="">Гобеленовые сумки</a></li>
+                        <li><a class="subSideBarItem" href="">Скатерти</a></li>
+                        <li><a class="subSideBarItem" href="">Пледы</a></li>
+                        <li><a class="subSideBarItem" href="">Полотенца</a></li>
+                    </ul>
+                </li>
+                <li><a class="sideBarItem" href="">колекции из текстиля</a>
+                    <ul class="subSideBar">
+                        <li><a class="subSideBarItem" href="">Гобеленовые сумки</a></li>
+                        <li><a class="subSideBarItem" href="">Скатерти</a></li>
+                        <li><a class="subSideBarItem" href="">Пледы</a></li>
+                        <li><a class="subSideBarItem" href="">Полотенца</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <p class='sideTitle'>Цена</p>
+            <div class="sliderRange"></div>
+            <p>
+                <input type="text" class='rangeVal' id="amountMin" readonly>
+                <span><i class="fas fa-angle-right"></i></span>
+                <input type="text" class='rangeVal' id="amountMax" readonly>
+            </p>
+        </aside>
+        <section class='content'>
+            <select name="sort" id="sort">
+		<option value="0">Сортировать по</option>
+		<option value="1">Цена по возрастанию</option>
+		<option value="2">Цена по убыванию</option>
+	</select>
+            <div class="productsDiv">
+                <div data-price='170' data-type ='blanket' class="product animated rotateInDownLeft">
+                    <div class= "new"></div>
+                    <img src="img/product1.jpg" alt="product">
+                    <p>Плед "Клеточка" LT1070</p>
+                    <a href="#" class='cartBtn'></a>
+                    <span class='productPrice'>170.00грн</span>
+                </div>
+                <div data-price='170' data-type="cover" class="product animated flipInX">
+                    <img src="img/product2.jpg" alt="product">
+                    <p>Покрывало PL03</p>
+                    <a href="#" class='cartBtn'></a>
+                    <span class='productPrice'>170.00грн</span>
+                </div>
+                <div data-price='220' data-type="gobelen" class="product animated flipInX">
+                    <img src="img/product3.jpg" alt="product">
+                    <p>Покрывало гобеленовое PLG03
+                    </p>
+                    <a href="#" class='cartBtn'></a>
+                    <span class='productPrice'>220.00грн</span>
+                </div>
+                <div data-price='200' data-type="gobelen" class="product animated flipInX">
+                   
+                    <img src="img/product3.jpg" alt="product">
+                    <p>Покрывало гобеленовое PLG03
+                    </p>
+                    <a href="#" class='cartBtn'></a>
+                    <span class='productPrice'>200.00грн</span>
+                </div>
+                <div data-price='100' data-type="blanket" class="product animated flipInX">
+                     <div class= "new"></div>
+                    <img src="img/product1.jpg" alt="product">
+                    <p>Плед "Клеточка" LT1070</p>
+                    <a href="#" class='cartBtn'></a>
+                    <span class='productPrice'>100.00грн</span>
+                </div>
+                <div data-price='150' data-type="cover" class="product animated flipInX">
+                    <img src="img/product2.jpg" alt="product">
+                    <p>Покрывало PL03</p>
+                    <a href="#" class='cartBtn'></a>
+                    <span class='productPrice'>150.00грн</span>
+                </div>
+                <div data-price='160' data-type="cover" class="product animated flipInX">
+                    <img src="img/product2.jpg" alt="product">
+                    <p>Покрывало PL03</p>
+                    <a href="#" class='cartBtn'></a>
+                    <span class='productPrice'>160.00грн</span>
+                </div>
+                <div data-price='990' data-type="gobelen" class="product animated flipInX">
+                    <img src="img/product3.jpg" alt="product">
+                    <p>Покрывало гобеленовое PLG03
+                    </p>
+                    <a href="#" class='cartBtn'></a>
+                    <span class='productPrice'>990.00грн</span>
+                </div>
+                <div data-price='180' data-type="blanket" class="product animated flipInX">
+                    <div class= "new"></div>
+                    <img src="img/product1.jpg" alt="product">
+                    <p>Плед "Клеточка" LT1070</p>
+                    <a href="#" class='cartBtn'></a>
+                    <span class='productPrice'>180.00грн</span>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <div class="container">
+            <a href="#" class="footerLogo"><img src="img/smLogo.png" alt=""></a>
+            <nav class="footerNav">
+                <div class='contacts'>
+                    <p class="footerTitle">
+                        контакты
+                    </p>
+                    <p class='house'>г. Львов, Кольцевая дорога с. Зымна Вода, ул. Яворовская, 22 ТЦ "Три Слона. Все для дома "</p>
+                    <div class="tel">
+                        <a href="tel:+38(067)6742021"> +38(067)6742021; </a>
+                        <a href="tel:+38(068)6745417"> +38(068)6745417 </a>
+                    </div>
+                    <div class="pay">
+                        <img src="img/visa.png" alt="visa">
+                        <img src="img/masterCard.png" alt="master card">
+                        <img src="img/paypal.png" alt="Paypal"></div>
+                </div>
+                <div>
+                    <p class="footerTitle">
+                        магазин
+                    </p>
+                    <ul class='footerMenu'>
+                        <li><a href="#">Акции</a></li>
+                        <li><a href="#">О нас</a></li>
+                        <li><a href="#">Доставка</a></li>
+                        <li><a href="#">Политика безопасности</a></li>
+                        <li><a href="#">Услуги</a></li>
+                        <li><a href="#">Возврат товара</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="footerTitle">
+                        клиентам
+                    </p>
+                    <ul class='footerMenu'>
+                        <li><a href="#">Личный кабинет</a></li>
+                        <li><a href="#">История заказов</a></li>
+                        <li><a href="#">Закладки</a></li>
+                        <li><a href="#">Рассылка</a></li>
+                        <li><a href="#">Партнерская программа</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="footerTitle">
+                        дополнительно
+                    </p>
+                    <ul class='footerMenu'>
+                        <li><a href="#">Производители</a></li>
+                        <li><a href="#">Подарочные сертификаты</a></li>
+                        <li><a href="#">Скидки и распродажи</a></li>
+                        <li><a href="#">Карта сайта</a></li>
+                        <li><a href="#">Свзязаться с нами</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="copyright">
+            <div class="container">
+                <div class="social">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fas fa-rss"></i></a>
+                    <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <p>LIMASO © 2017. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+    <section class="modalSection cardSection">
+        <div class="modal">
+            <a href="#" class='close close1'><i class="far fa-window-close"></i></a>
+            <p>Данные банковской карты</p>
+            <form action="#" class="cardsForm">
+
+
+                <div class="card c1">
+
+                    <label>Номер карты</label>
+                    <input type="text" maxlength='4' size='4' id="numb1">
+                    <input type="text" maxlength='4' size='4' id="numb2">
+                    <input type="text" maxlength='4' size='4' id="numb3">
+                    <input type="text" maxlength='4' size='4' id="numb4">
+                    <label>Срок действия</label>
+                    <select name="month" id="month">
+				<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						<option value="6">6</option>
+						<option value="7">7</option>
+						<option value="8">8</option>
+						<option value="9">9</option>
+						<option value="10">10</option>
+						<option value="11">11</option>
+						<option value="12">12</option>		
+			</select>
+                    <select name="year" id="year">
+				<option value="2018">2018</option>
+						<option value="2019">2019</option>
+						<option value="2020">2020</option>
+						<option value="2021">2021</option>
+						<option value="2022">2022</option>
+						<option value="2023">2023</option>		
+			</select>
+                    <input type="text" name="cardHolder" id="cardHolder" placeholder='Держатель карты'>
+
+                </div>
+                <div class="card c2">
+                    <div class="cardLine"></div>
+                    <label>Код CVV2 / CVC2</label>
+                    <input type="text" id="cvv" maxlength='3'>
+                </div>
+                <input type="submit" value='Оплатить' class='payBtn'>
+
+            </form>
+        </div>
+    </section>
+    <section class="modalSection ajaxSection">
+        <div class="modal ajaxModal">
+            <a href="#" class='close2 close'><i class="far fa-window-close"></i></a>
+            <p>Lorem ipsum dolor.</p>
+            <span></span>
+        </div>
+    </section>
+    <script src="js/scripts.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+
+</body>
+
+</html>
